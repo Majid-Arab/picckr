@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed bg-black w-full">
+    <nav className="fixed bg-black w-full z-50">
       <div className="mx-auto px-2 sm:px-6 md:px-14 lg:px-16 xl:px-28 ">
         <div className="relative flex h-16 items-center justify-between">
           <div className="">
@@ -77,13 +77,13 @@ function Navbar() {
         </div>
       </div>
 
-      {/* <!-- Sidebar menu for mobile --> */}
+      {/* Sidebar menu for mobile */}
       <div
         className={`flex flex-col justify-center items-center fixed inset-y-0 left-0 w-full bg-white text-white transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-30`}
+        } transition-transform duration-300 ease-in-out z-40`}
       >
-        <div className="flex flex-col justify-center items-center mt-10">
+        <div className="flex flex-col justify-center items-center mt-10 gap-8">
           <button
             onClick={toggleSidebar}
             className="absolute top-4 right-4 text-[#F48507]"
@@ -92,32 +92,32 @@ function Navbar() {
           </button>
           <a
             href="#"
-            className="block py-2 px-3 text-base font-medium text-white"
+            className="block py-2 px-3 text-base font-medium text-black hover:text-[#F4A602]"
             aria-current="page"
           >
             Home
           </a>
           <a
             href="#"
-            className="block py-2 px-3 text-base font-medium text-white hover:text-[#F4A602]"
+            className="block py-2 px-3 text-base font-medium text-black hover:text-[#F4A602]"
           >
             How it Works
           </a>
           <a
             href="#"
-            className="block py-2 px-3 text-base font-medium text-white hover:text-[#F4A602]"
+            className="block py-2 px-3 text-base font-medium text-black hover:text-[#F4A602]"
           >
             FAQs
           </a>
           <a
             href="#"
-            className="block py-2 px-3 text-base font-medium text-white hover:text-[#F4A602]"
+            className="block py-2 px-3 text-base font-medium text-black hover:text-[#F4A602]"
           >
             Contact
           </a>
           <a
             href="#"
-            className="block py-2 px-3 text-base font-medium text-white hover:text-[#F4A602]"
+            className="block py-2 px-3 text-base font-medium text-black hover:text-[#F4A602]"
           >
             Support
           </a>
@@ -126,7 +126,7 @@ function Navbar() {
       {/* Backdrop for sidebar */}
       {isSidebarOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-20"
+          className="fixed inset-0 bg-black bg-opacity-50 z-30"
           onClick={toggleSidebar}
         ></div>
       )}

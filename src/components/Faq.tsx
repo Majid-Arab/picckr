@@ -19,22 +19,23 @@ const FAQ = () => {
       answer:
         "Yes, you can schedule deliveries in advance through the PicckR app.",
     },
-    // Add more FAQs as needed
   ];
 
   return (
-    <>
+    <div className="px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20">
       <div
-        className="relative h-64 w-full bg-cover bg-center bg-[#F49C02]"
+        className="relative h-64 w-full bg-cover bg-center bg-[#F49C02] rounded-2xl"
         style={{
           backgroundImage:
             "url(https://picckr.com/assets/images/community-bg.png)",
         }}
       >
         <div className="relative flex flex-col items-center justify-center h-full text-white text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold">Join Us</h2>
-          <button className="mt-4 px-6 py-2 bg-orange-500 text-white rounded-lg">
-            Join Now
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold pb-5">
+            Join #Picckr Community
+          </h2>
+          <button className="mt-5 px-10 py-2 text-orange-500 bg-white rounded-lg">
+            Join
           </button>
         </div>
       </div>
@@ -43,8 +44,8 @@ const FAQ = () => {
           FAQs
         </h2>
         <p className="text-center text-lg mb-6">
-          Still have some questions for us? Please reach out to our friendly
-          team. Get in touch.
+          Still have some questions for us? Please reach out to our <br />
+          friendly team. Get in touch.
         </p>
         <div className="space-y-4">
           {faqs.slice(0, showAll ? faqs.length : 3).map((faq, index) => (
@@ -63,7 +64,7 @@ const FAQ = () => {
           {showAll ? "Show Less" : "More FAQs"}
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

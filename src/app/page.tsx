@@ -16,8 +16,8 @@ export default function Home() {
       <Separator />
       <Showcase />
       <Separator />
-      {/* <FAQ />
-      <ContactUsButton /> */}
+      <FAQ />
+      <ContactUsButton />
     </main>
   );
 }

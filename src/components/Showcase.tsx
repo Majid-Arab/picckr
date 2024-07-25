@@ -59,16 +59,22 @@ const Showcase = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="relative w-1/4 h-64 bg-cover bg-center flex flex-col items-center justify-center p-4"
+            className="w-1/4 h-64 bg-cover bg-center flex flex-col items-center gap-10 justify-center p-4"
           >
-            <Image
-              src={item.src}
-              alt={`Image`}
-              layout="fill"
-              objectFit="contain"
-            />
-            <h2 className="text-white text-xl mb-2">{item.heading}</h2>
-            <p className="text-white text-center">{item.paragraph}</p>
+            <div className="relative w-1/4 h-64">
+              <Image
+                src={item.src}
+                alt={`Image`}
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl md:text-2xl text-black  font-semibold text-center">
+                {item.heading}
+              </h3>
+              <p className="text-center text-md text-black">{item.paragraph}</p>
+            </div>
           </div>
         ))}
       </div>
