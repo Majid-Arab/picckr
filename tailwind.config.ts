@@ -12,7 +12,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        JoinImage: "url('https://picckr.com/assets/images/community-bg.png)",
+        "join-image": "url('https://picckr.com/assets/images/community-bg.png)",
+        "dash-line": "url('https://picckr.com/assets/images/dashed-line.png)",
       },
     },
   },

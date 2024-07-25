@@ -21,7 +21,7 @@ export default function Checkout() {
         <h1 className="text-1xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-gray-900">
           Check out the app
         </h1>
-        <p className=" text-lg md:text-xl leading-6 text-black !text-center">
+        <p className=" text-lg md:text-xl leading-6 text-black pt-5">
           Place orders for delivery & someone close to you will do the job
         </p>
         <div className="flex flex-col gap-5 md:flex-row justify-center items-center ">
