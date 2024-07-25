@@ -80,7 +80,7 @@ export default function Checkout() {
           alt="Mobile"
           width={500}
           height={500}
-          className="absolute right-0 top-0 w-20 sm:w-40 md:w-48 lg:w-64 aos-init aos-animate"
+          className="absolute right-0 top-0 w-20 sm:w-40 md:w-48 lg:w-64 aos-init aos-animate -z-10"
         />
       </div>
     </>

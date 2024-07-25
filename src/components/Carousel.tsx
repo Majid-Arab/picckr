@@ -22,14 +22,14 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ">
             <div className="p-4 rounded-full border-4 border-yellow-400">
               <Image
                 src="https://picckr.com/assets/images/sender-whyus-3.png"
                 alt="Accessibility"
                 height={500}
                 width={500}
-                className="h-24 w-24"
+                className="h-24 w-24 z-10"
               />
             </div>
             <h3 className=" text-xl md:text-2xl text-black  font-semibold text-center">

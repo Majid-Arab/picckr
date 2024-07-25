@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const Showcase = () => {
   return (
@@ -13,14 +13,19 @@ const Showcase = () => {
       </div>
       <div className="relative w-full h-64 mt-6">
         <Image
-          src="/path/to/your/image.jpg"
+          src="https://picckr.com/assets/images/sender-work.png"
           alt="Main Image"
           layout="fill"
           objectFit="cover"
         />
       </div>
-      <div className="flex justify-between mt-6">
-        {['/path/to/image1.jpg', '/path/to/image2.jpg', '/path/to/image3.jpg', '/path/to/image4.jpg'].map((src, index) => (
+      <div className="flex justify-between mt-6 bg ">
+        {[
+          "https://picckr.com/assets/svg/sender-work-1.svg",
+          "https://picckr.com/assets/svg/sender-work-2.svg",
+          "https://picckr.com/assets/svg/sender-work-6.svg",
+          "https://picckr.com/assets/svg/sender-work-3.svg",
+        ].map((src, index) => (
           <div key={index} className="relative w-1/4 h-48">
             <Image
               src={src}
