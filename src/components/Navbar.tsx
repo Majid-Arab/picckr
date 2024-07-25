@@ -12,7 +12,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-black">
+    <nav className="fixed bg-black w-full">
       <div className="mx-auto px-2 sm:px-6 md:px-14 lg:px-16 xl:px-28 ">
         <div className="relative flex h-16 items-center justify-between">
           <div className="">
