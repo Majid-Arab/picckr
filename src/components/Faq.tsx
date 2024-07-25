@@ -1,16 +1,23 @@
-'use client'
+"use client";
 import { useState } from "react";
 
 const FAQ = () => {
   const [showAll, setShowAll] = useState(false);
   const faqs = [
     {
-      question: "What is the app?",
-      answer: "It is an app for placing delivery orders.",
+      question: "What is PicckR?",
+      answer:
+        "PicckR is a delivery service app that allows users to place orders for delivery, and someone nearby will fulfill the order.",
     },
     {
-      question: "How does it work?",
-      answer: "Place an order and someone close will do the job.",
+      question: "Where is PicckR available?",
+      answer:
+        "PicckR is available in multiple locations. Please check the app for the latest available areas.",
+    },
+    {
+      question: "Can I schedule a delivery ahead of time?",
+      answer:
+        "Yes, you can schedule deliveries in advance through the PicckR app.",
     },
     // Add more FAQs as needed
   ];
@@ -30,11 +37,12 @@ const FAQ = () => {
         </div>
       </div>
       <div className="p-6">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4">
-          Frequently Asked Questions
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-2">
+          FAQs
         </h2>
         <p className="text-center text-lg mb-6">
-          Find answers to common questions below
+          Still have some questions for us? Please reach out to our friendly
+          team. Get in touch.
         </p>
         <div className="space-y-4">
           {faqs.slice(0, showAll ? faqs.length : 3).map((faq, index) => (
