@@ -3,6 +3,7 @@
 import { IconApple } from "@tabler/icons-react";
 import Image from "next/image";
 import { useState } from "react";
+import Carousel from "./Carousel";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -15,7 +16,7 @@ export default function Checkout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <>
+    <div className="px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20">
       <div className="flex flex-col justify-center items-center gap-10 sm:gap-16 w-full h-full px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20 sm:!h-fit md:gap-5  sm:!pb-28 bg-white">
         <h1 className="text-1xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-gray-900">
           Check out the app
@@ -73,16 +74,16 @@ export default function Checkout() {
           alt="Mobile"
           width={500}
           height={500}
-          className="w-[250px]"
+          className="w-[280px]"
         />
         <Image
           src="https://picckr.com/assets/images/arrow-2.png"
           alt="Mobile"
           width={500}
           height={500}
-          className="absolute right-0 top-0 w-20 sm:w-40 md:w-48 lg:w-64 aos-init aos-animate -z-10"
+          className="absolute right-0 top-0 w-20 sm:w-40 md:w-48 lg:w-64 aos-init aos-animate"
         />
       </div>
-    </>
+    </div>
   );
 }
