@@ -25,7 +25,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
       onClick={handleOverlayClick}
     >
       <div
-        className="bg-white p-6 rounded-lg shadow-lg"
+        className="bg-white p-6 rounded-lg shadow-lg "
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-3xl font-bold text-center mb-5">Contact us</h2>
@@ -35,7 +35,7 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
           to hear from you.
         </p>
         <div className="flex">
-          <div className="hidden md:flex relative justify-center items-end h-full w-470wd md:w-350wd rounded-10bd md:px-0 bg-[#F69308] w-1/2">
+          <div className="flex-1 hidden md:flex relative justify-center items-end bg-[#F69308] rounded-lg text-start m-2">
             <Image
               src="https://picckr.com/assets/images/contact-arrow.png"
               alt="Contact Arrow"
@@ -52,20 +52,38 @@ const Modal: React.FC<ModalProps> = ({ isVisible, onClose }) => {
             />
           </div>
           <div>
-            <form action="" className="border-solid border-2 ">
+            <form className="space-y-4 border-solid border-black border-[1px] rounded-lg px-4 py-8 text-start m-2">
               <div>
-                <label htmlFor="">Full Name</label>
-                <input type="text" placeholder="Your full name" />
+                <label className="block text-gray-700 mb-2">Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Your full name"
+                  className="w-full px-3 py-2 border rounded-lg"
+                />
               </div>
               <div>
-                <label htmlFor="">Email Address</label>
-                <input type="text" placeholder="Your email address" />
+                <label className="block text-gray-700 mb-2">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  className="w-full px-3 py-2 border rounded-lg"
+                />
               </div>
               <div>
-                <label htmlFor="">Your Message</label>
-                <textarea name="" id="" placeholder="Your message"></textarea>
+                <label className="block text-gray-700 mb-2">Your Message</label>
+                <textarea
+                  placeholder="Your message"
+                  className="w-full px-3 py-2 border rounded-lg h-24"
+                />
               </div>
-              <button>Send Your Message</button>
+              <button
+                type="submit"
+                className="w-full px-6 py-2 bg-orange-500 text-white rounded-lg"
+              >
+                Send Your Message
+              </button>
             </form>
           </div>
         </div>
