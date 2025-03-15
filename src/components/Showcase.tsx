@@ -25,58 +25,43 @@ const Showcase = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-between gap-20 px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20">
+    <div className="flex flex-col items-center gap-16 px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20">
       <div className="text-center">
-        <h1 className="text-1xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-gray-900">
+        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight text-gray-900">
           How it works
         </h1>
-        <p className=" text-lg md:text-xl leading-6 text-black pt-5">
+        <p className="text-lg md:text-xl text-black pt-5">
           Find out how to register as a sender
         </p>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center w-full max-w-3xl">
         <Image
           width={500}
           height={500}
           src="https://picckr.com/assets/images/sender-work.png"
-          alt="Your Company"
-          className="w-2/4 h-auto"
+          alt="1 Mobile"
+          className="w-full h-auto"
         />
       </div>
       <div
-        className="flex justify-between mt-6"
-        style={{
-          backgroundImage: `url(https://picckr.com/assets/images/community-bg.png)`,
-        }}
+        className="relative w-full py-16 px-4 bg-cover bg-center"
       >
-        <Image
-          src="https://picckr.com/assets/images/community.png"
-          alt="Your Company"
-          width={500}
-          height={500}
-          className="sm:block absolute top-40 md:top-44  lg:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70%] lg:w-[85%] -mt-16"
-        />
-        {items.map((item, index) => (
-          <div
-            key={index}
-            className="w-1/4 h-64 bg-cover bg-center flex flex-col items-center gap-10 justify-center p-4"
-          >
-            <div className="relative w-1/4 h-64">
-              <Image
-                src={item.src}
-                alt={`Image`}
-                layout="fill"
-                objectFit="contain"
-              />
-            </div>
-            <div className="text-center">
-              <h3 className="text-xl md:text-2xl text-black  font-semibold text-center">
+        <div className="relative flex flex-wrap justify-center gap-8 mx-auto text-center">
+          {items.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center gap-6 p-6"
+            >
+              <div className="relative w-20 md:w-[200px]">
+                <Image src={item.src} alt={`Image`} objectFit="cover" height={500} width={500}/>
+              </div>
+              <h3 className="text-xl md:text-2xl font-semibold text-black">
                 {item.heading}
               </h3>
-              <p className="text-center text-md text-black">{item.paragraph}</p>
+              <p className="text-md text-black">{item.paragraph}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
