@@ -42,32 +42,32 @@ function Navbar() {
           <div className="hidden sm:ml-6 sm:block">
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="/"
                 className="px-3 py-2 text-sm font-medium text-white hover:text-[#F4A602]"
                 aria-current="page"
               >
                 Home
               </a>
               <a
-                href="#"
+                href="#HowItWorks"
                 className="px-3 py-2 text-sm font-medium text-white hover:text-[#F4A602]"
               >
                 How it Works
               </a>
               <a
-                href="#"
+                href="#FAQ"
                 className="px-3 py-2 text-sm font-medium text-white hover:text-[#F4A602]"
               >
                 FAQs
               </a>
               <a
-                href="#"
+                href="#Contact"
                 className="px-3 py-2 text-sm font-medium text-white hover:text-[#F4A602]"
               >
                 Contact
               </a>
               <a
-                href="#"
+                href="#Support"
                 className="py-2 px-3 text-base font-medium text-white hover:text-[#F4A602]"
               >
                 Support

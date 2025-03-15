@@ -64,7 +64,7 @@ const FAQ = () => {
   };
 
   return (
-    <div data-accordion="collapse" className="">
+    <div data-accordion="collapse" id="FAQ">
       <div className="px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20">
         <div
           className="relative w-full p-8 bg-cover bg-center bg-[#F49C02] rounded-2xl"

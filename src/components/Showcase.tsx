@@ -25,7 +25,7 @@ const Showcase = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center gap-16 px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20">
+    <div className="flex flex-col items-center gap-16 px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20" id="HowItWorks">
       <div className="text-center">
         <h1 className="text-3xl md:text-5xl font-semibold tracking-tight text-gray-900">
           How it works
