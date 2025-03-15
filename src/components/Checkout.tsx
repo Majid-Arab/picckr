@@ -18,16 +18,16 @@ export default function Checkout() {
   return (
     <div className="px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20">
       <div className="flex flex-col justify-center items-center gap-10 sm:gap-16 w-full h-full px-5 sm:px-8 md:px-14 lg:px-16 xl:px-28 py-8 sm:py-14 md:py-20 sm:!h-fit md:gap-5  sm:!pb-28 bg-white">
-        <h1 className="text-1xl sm:text-3xl md:text-5xl font-semibold tracking-tight text-gray-900">
+        <h1 className="text-3xl md:text-5xl font-semibold tracking-tight text-gray-900">
           Check out the app
         </h1>
-        <p className=" text-lg md:text-xl leading-6 text-black pt-5">
+        <p className="max-w-xl text-center text-lg md:text-xl leading-6 text-black">
           Place orders for delivery & someone close to you will do the job
         </p>
-        <div className="flex flex-col gap-5 md:flex-row justify-center items-center ">
+        <div className="flex gap-5 md:flex-row justify-center items-center mt-10 ">
           <div className="bg-black rounded-full text-white p-5">
             <svg
-              className="w-10 h-10"
+              className="w-6 h-6 md:w-10 md:h-10"
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
@@ -44,7 +44,7 @@ export default function Checkout() {
           </div>
           <div className="bg-black rounded-full text-white p-5">
             <svg
-              className="w-12 h-12"
+              className="w-6 h-6 md:w-10 md:h-10"
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
