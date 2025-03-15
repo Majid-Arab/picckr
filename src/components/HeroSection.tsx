@@ -32,20 +32,20 @@ export default function HeroSection() {
           className="w-full h-full"
         />
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center ">
+      <div className="flex flex-col md:flex-row justify-center items-center md:gap-10">
         <Image
           width={500}
           height={500}
           src="https://picckr.com/assets/images/google.png"
           alt="Google Play"
-          className="object-contain h-44 w-44"
+          className="object-cover h-20 w-44"
         />
         <Image
           width={500}
           height={500}
           src="https://picckr.com/assets/images/apple.png"
           alt="App Store"
-          className="object-contain h-44 w-44"
+          className="object-cover h-20 w-44"
         />
       </div>
     </div>
