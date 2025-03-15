@@ -1,3 +1,4 @@
+import { IconBrandFacebook, IconBrandInstagram, IconBrandWhatsapp } from "@tabler/icons-react";
 import Image from "next/image";
 
 const Footer = () => {
@@ -14,13 +15,13 @@ const Footer = () => {
         <div className="flex justify-center space-x-4 mt-4">
           {/* Add your social icons here */}
           <a href="#" className="text-white">
-            Icon1
+            <IconBrandInstagram />
           </a>
           <a href="#" className="text-white">
-            Icon2
+            <IconBrandFacebook />
           </a>
           <a href="#" className="text-white">
-            Icon3
+            <IconBrandWhatsapp />
           </a>
         </div>
       </div>
