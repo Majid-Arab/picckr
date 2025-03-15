@@ -34,7 +34,7 @@ const Showcase = () => {
           Find out how to register as a sender
         </p>
       </div>
-      <div className="flex justify-center w-full max-w-3xl">
+      <div className="flex justify-center w-full">
         <Image
           width={500}
           height={500}
