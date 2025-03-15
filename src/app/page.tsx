@@ -8,7 +8,7 @@ import Showcase from "@/components/Showcase";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="pt-20">
       <HeroSection />
       <Separator />
       <Checkout />
